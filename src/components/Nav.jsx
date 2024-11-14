@@ -2,9 +2,13 @@ import { useState } from "react";
 
 function NavPage() {
     const [showMenu, setShowMenu] = useState(false)
+    const [activeButton, isActiveButton] = useState(false)
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
+    }
+    const toggleActiveButton = () => {
+        isActiveButton(!activeButton);
     }
     return (
         <div className="navigation">
@@ -16,7 +20,7 @@ function NavPage() {
                     <li>Partnership</li>
                     <li>Testimonial</li>
                 </ul>
-                <button className="contact">Contact Us</button>
+                <button className={`contact ${activeButton ? "active" : ""}`} onClick={toggleActiveButton}>Contact Us</button>
                     <span className="toggle-menu" onClick={toggleMenu}>
                         <ion-icon name="menu-outline" />
                     </span>
