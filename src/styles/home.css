@@ -1,7 +1,131 @@
-.test {
-    color: red;
+.home {
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.test.active {
-    color: gray;
+.home header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header div {
+    width: 47%;
+    box-sizing: border-box;
+}
+
+header button {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+}
+
+header button span {
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.color {
+    color: #73f28b;
+}
+
+.header-text {
+    padding: 20px 0;
+}
+
+.header-text h1 {
+    font-size: 3.3em;
+    margin: 80px 0;
+    width: 57%;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+header .join-btn {
+    padding: 7px 25px 7px 5px ;
+    border-radius: 30px;
+    background-color: #333;
+    font-weight: 600;
+    font-size: 13px;
+    gap: 13px;
+}
+
+.join-btn .globe {
+    color: #73f28b;
+    font-size: 20px;
+}
+
+header .started-btn {
+    background-color: #5047e9;
+    padding: 12px 27px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+    margin-right: 20px;
+    &:hover {
+        background-color: #fff;
+        color: #000;
+        border-color: #000;
+    }
+}
+
+header .explore-btn {
+    background-color: transparent;
+    padding: 12px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+.explore-btn .more-span {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    transition: .3s ease-in-out;
+    margin-right: 8px;
+}
+
+.explore-btn:hover .more-span {
+    padding-bottom: 6px;
+}
+
+header .header-img {
+    background-image: url(../assets/bg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1000px) {
+    .home header {
+        padding: 15px 20px;
+    }
+    .header-text h1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    header div {
+        width: 100%;
+    }
+    .header-text {
+        padding: 0;
+    }
+    .header-text h1 {
+        margin: 40px 0;
+    }
+    header .header-img {
+        height: 50vh;
+    }
 }
