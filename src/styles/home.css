@@ -106,6 +106,138 @@ header .header-img {
     background-repeat: no-repeat;
 }
 
+.home main {
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+main .impact {
+    margin-top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.impact h5 {
+    font-size: 13px;
+    background-color: #c7c7c7;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: fit-content;
+}
+
+.impact .impact-head {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.impact-head h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.impact-head .impact-right {
+    border-left: 2px solid #c7c7c7;
+    width: 73%;
+    padding-left: 40px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.impact-right p {
+    font-size: 18px;
+    box-sizing: border-box;
+    font-weight: 400;
+    width: 65%;
+}
+
+.impact-right button {
+    height: fit-content;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid #000;
+    font-family: inherit;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+    &:hover {
+        background-color: #5047e9;
+        color: #fff;
+    }
+}
+
+.impact .impact-foot {
+    display: inline-flex;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.impact-foot section {
+    width: 30%;
+    background-color: red;
+    height: 50vh;
+    box-sizing: border-box;
+    display: flex;
+    filter: grayscale(1);
+    border-radius: 20px;
+    background-image: url(../assets/planet.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    &:hover .objectives-text {
+        max-height: 30vh;
+    }
+}
+.impact-foot .help-img {
+    background-image: url(../assets/help.png);
+}
+.impact-foot .community-img {
+    background-image: url(../assets/volunteer.jpg);
+}
+.impact-foot section:hover {
+    filter: grayscale(0);
+}
+
+.impact-foot section.show {
+    filter: grayscale(0);
+}
+
+.impact-foot section.show .objectives-text {
+    max-height: 30vh;
+}
+
+section .objectives-text {
+    background-color: #5047e9;
+    max-height: 0;
+    align-self: flex-end;
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+    transition: .4s ease-in-out;
+}
+
+.objectives-text h2 {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 20px 20px 0 20px;
+}
+
+.objectives-text p {
+    margin-top: 10px;
+    padding: 0 20px 20px 20px;
+    font-size: 14px;
+}
+
 @media (max-width: 1000px) {
     .home header {
         padding: 15px 20px;
@@ -115,7 +247,7 @@ header .header-img {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     header div {
         width: 100%;
     }
@@ -127,5 +259,30 @@ header .header-img {
     }
     header .header-img {
         height: 50vh;
+    }
+    .impact .impact-head {
+        flex-wrap: wrap;
+    }
+    .impact-head .impact-right {
+        margin-top: 10px;
+        width: 100%;
+        flex-direction: column;
+        border-left: none;
+        gap: 10px;
+        padding: 0;
+    }
+    .impact-right p {
+        width: 100%;
+    }
+    .impact-right button {
+        align-self: center;
+        width: fit-content;
+    }
+    .impact .impact-foot {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .impact-foot section {
+        width: 100%;
     }
 }
