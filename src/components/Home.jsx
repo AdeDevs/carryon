@@ -3,8 +3,6 @@ import One from "../assets/volunteer.jpg";
 import cactus from "../assets/cactus.png";
 import cloud from "../assets/cloud.png";
 import greenish from "../assets/greenish.png";
-import hues from "../assets/hues.png";
-import leafe from "../assets/leafe.png";
 import proline from "../assets/proline.png";
 import snowflake from "../assets/snowflake.png";
 import vision from "../assets/vision.png";
@@ -175,40 +173,38 @@ function HomePage() {
                   </p>
                 </div>
                 <div className="testimonial-foot">
-                  <h2>Thanks mba</h2>
+                  <h2>Suzan Ivanka</h2>
                   <h1>CTO of Apple</h1>
                 </div>
               </section>
             </div>
             <div className="testimonial-card">
-              <section className="testimonial-image"></section>
+              <section className="testimonial-image1"></section>
               <section className="testimonial-info">
                 <div className="testimonial-head">
                   <h3>Testimonial by hero</h3>
                   <p>
-                    it's been an incredible journey, i feel good about
-                    volunteering, and i wish more people can do voluntary
+                  Being a part of this journey has been life-changing. The connections I’ve built and the lives I’ve touched through volunteering have given me a sense of purpose like no other. Everyone has something to give
                   </p>
                 </div>
                 <div className="testimonial-foot">
-                  <h2>Thanks mba</h2>
-                  <h1>CTO of Apple</h1>
+                  <h2>John Miller</h2>
+                  <h1>Community Outreach Leader</h1>
                 </div>
               </section>
             </div>
             <div className="testimonial-card">
-              <section className="testimonial-image"></section>
+              <section className="testimonial-image2"></section>
               <section className="testimonial-info">
                 <div className="testimonial-head">
                   <h3>Testimonial by hero</h3>
                   <p>
-                    it's been an incredible journey, i feel good about
-                    volunteering, and i wish more people can do voluntary
+                    Volunteering has opened my eyes to the strength of community and compassion. Every moment spent helping others has brought me joy and fulfillment. I encourage everyone to take a step toward giving back
                   </p>
                 </div>
                 <div className="testimonial-foot">
-                  <h2>Thanks mba</h2>
-                  <h1>CTO of Apple</h1>
+                  <h2>Sarah Thompson</h2>
+                  <h1>Volunteer Coordinator</h1>
                 </div>
               </section>
             </div>

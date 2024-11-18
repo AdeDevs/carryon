@@ -499,12 +499,12 @@ section .objectives-text {
   justify-content: space-between;
   display: inline-flex;
   margin-top: 50px;
-  &:hover .testimonial-image {
+  &:hover .testimonial-image, &:hover .testimonial-image1, &:hover .testimonial-image2 {
     filter: grayscale(0);
   }
 }
 
-.testimonial-card .testimonial-image {
+.testimonial-card .testimonial-image, .testimonial-image1, .testimonial-image2 {
   background-image: url(../assets/apple.jpg);
   background-position: center;
   background-size: cover;
@@ -515,6 +515,13 @@ section .objectives-text {
   filter: grayscale(1);
   width: 47%;
   transition: 0.4s ease-in-out;
+}
+
+.testimonial-image1 {
+    background-image: url(../assets/group.jpg);
+}
+.testimonial-image2 {
+    background-image: url(../assets/help.png);
 }
 
 .testimonial-card .testimonial-info {
@@ -595,7 +602,6 @@ section .objectives-text {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  /* Make sure to use a longer duration for smoother scrolling */
 }
 
 @keyframes scroll {
@@ -803,6 +809,16 @@ footer .footer-head {
   }
   .testimonials h4 {
     width: 100%;
+  }
+  .testimonial-info p {
+    font-size: 14px;
+  }
+  .testimonial-foot h2 {
+    font-size: 20px;
+  }
+  .testimonial-foot h1 {
+    font-size: 13px;
+    font-weight: 600;
   }
   .testimonial-box .testimonial-card {
     min-width: 700px;
