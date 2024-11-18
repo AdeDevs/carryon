@@ -10,7 +10,7 @@ function NavPage() {
   return (
     <div className="navigation">
       <nav>
-        <h1>
+        <h1 className="logo">
           {" "}
           <button>
             <br />
