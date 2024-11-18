@@ -833,6 +833,12 @@ footer .footer-head {
     animation: scroll 15s linear infinite;
     padding: 20px 0;
   }
+  footer .footer-head {
+    padding: 40px 10px;
+  }
+  .footer-tail {
+    padding: 30px 10px;
+  }
   .footer-head h1 {
     width: 70%;
   }
